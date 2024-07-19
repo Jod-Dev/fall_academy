@@ -1,0 +1,230 @@
+/*dark css*/
+
+
+.iyf-dark{
+	background: #292E3C;
+}
+
+.iyf-header-area-dark .iyf-header-main-menu ul > li > a{
+	color: #fff;
+}
+.iyf-header-area-dark .header-nav-box .iyf-btn-box .login-btn{
+	color: #fff;
+}
+
+
+
+.iyf-hero-area-dark .iyf-hero-content .iyf-title{
+	color: #fff;
+}
+
+.iyf-hero-area-dark .iyf-hero-content p{
+	color: #fff;
+}
+
+.iyf-hero-area-dark .iyf-hero-content ul li a{
+	background: #fff;
+	border-color: #fff;
+	color: #0e1133;
+}
+
+.iyf-hero-area-dark .iyf-hero-content ul li a:hover{
+	background: transparent;
+	color: #fff;
+}
+
+.iyf-hero-area-dark .iyf-hero-content ul li a.item-2{
+	color: #fff;
+}
+.iyf-hero-area-dark .iyf-hero-content ul li a.item-2:hover{
+	background: #fff;
+	color: #0e1133;
+}
+
+.iyf-academies-area.iyf-academies-area-dark{
+	background: #1f2128;
+}
+
+.iyf-academies-area-dark .iyf-section-title .iyf-title{
+	color: #fff;
+}
+.iyf-academies-area-dark .iyf-section-title p{
+	color: #fff;
+}
+
+.iyf-academies-area-dark  .iyf-single-academies{
+	background: #292E3C;
+}
+
+.iyf-academies-area-dark .iyf-single-academies p,
+.iyf-academies-area-dark .iyf-single-academies .iyf-title{
+	color: #fff;
+}
+
+.iyf-features-area-dark  .iyf-features-tabs-btn .nav a{
+	color: #fff;
+}
+
+.iyf-features-area-dark .iyf-features-content p,
+.iyf-features-area-dark .iyf-features-content .title{
+	color: #fff;
+}
+
+.iyf-traffic-area-dark .iyf-traffic-title p,
+.iyf-traffic-area-dark .iyf-traffic-title .title{
+	color: #fff;
+}
+
+.iyf-traffic-area-dark .iyf-traffic-academies p,
+.iyf-traffic-area-dark .iyf-traffic-academies .title{
+	color: #fff;
+}
+
+.iyf-traffic-area-dark .traffic-btn a.main-btn{
+	color: #fff;
+}
+.iyf-traffic-area-dark .traffic-btn a.main-btn:hover{
+	background: #fff;
+	color: #2b70fa;
+}
+
+.iyf-team-area-dark .iyf-section-title p,
+.iyf-team-area-dark .iyf-section-title .iyf-title{
+	color: #fff;
+}
+
+.iyf-team-area-dark .iyf-team-item .content span,
+.iyf-team-area-dark .iyf-team-item .content .title{
+	color: #fff;
+}
+
+.iyf-team-area-dark .team-btn a{
+	color: #fff;
+}
+
+
+
+.iyf-faq-area-dark.iyf-faq-area,
+.iyf-pricing-area-dark.iyf-pricing-area{
+	background: #1f2128;
+}
+
+.iyf-pricing-area-dark .iyf-section-title p,
+.iyf-pricing-area-dark .iyf-section-title .iyf-title{
+	color: #fff;
+}
+
+
+
+.iyf-pricing-area-dark.iyf-pricing-area ul.switch-toggler-list li a{
+	color: #fff;
+	opacity: 0.1;
+}
+.iyf-pricing-area-dark.iyf-pricing-area ul.switch-toggler-list li.active a{
+	color: #fff;
+	opacity: 1;
+}
+
+
+.iyf-pricing-area-dark.iyf-pricing-area .pricing-one__single{
+	background: #292E3C;
+	color: #fff;
+}
+
+.iyf-pricing-area-dark .pricing-one__single .pricig-heading h6{
+	color: #fff;
+}
+
+.iyf-pricing-area-dark .pricing-one__single .pricig-heading .price-range{
+	color: #fff;
+}
+
+.iyf-pricing-area-dark .pricing-one__single .pricig-heading .price-range p{
+	color: #fff;
+}
+
+.iyf-pricing-area-dark .pricing-one__single .pricig-heading > p{
+	color: #fff;
+}
+
+.iyf-pricing-area-dark .pricing-one__single .pricig-body ul li{
+	color: #fff;
+}
+
+.iyf-pricing-area-dark  .pricing-one__single .pricig-body .pricing-btn a{
+	color: #fff;
+}
+
+
+
+
+.iyf-faq-area.iyf-faq-area-dark .iyf-section-title p,
+.iyf-faq-area.iyf-faq-area-dark .iyf-section-title .iyf-title{
+	color: #fff;
+}
+
+
+.iyf-faq-area.iyf-faq-area-dark .faq-accrodion .accrodion{
+	background: #292E3C;
+	
+}
+.iyf-faq-area.iyf-faq-area-dark .faq-accrodion .accrodion .accrodion-inner,
+.iyf-faq-area.iyf-faq-area-dark .faq-accrodion .accrodion.active .accrodion-inner{
+	border-color: #292E3C;
+	background: #292E3C;
+}
+
+.iyf-faq-area.iyf-faq-area-dark .faq-accrodion .accrodion .accrodion-content p,
+.iyf-faq-area.iyf-faq-area-dark .faq-accrodion .accrodion .accrodion-title h4{
+	color: #fff;
+}
+
+.iyf-blog-area-dark .iyf-section-title p,
+.iyf-blog-area-dark .iyf-section-title .iyf-title{
+	color: #fff;
+}
+.iyf-blog-area-dark .iyf-blog-item .content > a,
+.iyf-blog-area-dark .iyf-blog-item .content .title a,
+.iyf-blog-area-dark .iyf-blog-item .content .blog-meta ul li a,
+.iyf-blog-area-dark .iyf-blog-item .content .blog-meta ul li{
+	color: #fff;
+}
+
+.iyf-blog-area-dark .iyf-blog-item .content > a:hover,
+.iyf-blog-area-dark .iyf-blog-item .content .title a:hover{
+	color: #2b70fa;
+}
+
+
+.iyf-footer-area-dark.iyf-footer-area{
+	background: #1f2128;
+}
+
+.iyf-footer-area-dark .footer-about-widget a,
+.iyf-footer-area-dark .footer-about-widget p{
+	color: #fff;
+}
+.iyf-footer-area-dark .footer-about-widget a:hover{
+	color: #2b70fa;
+}
+
+.iyf-footer-area-dark .footer-widget-info ul li a,
+.iyf-footer-area-dark .footer-widget-info .title,
+.iyf-footer-area-dark .footer-navigation ul li a,
+.iyf-footer-area-dark .footer-navigation .title{
+	color: #fff;
+}
+.iyf-footer-area-dark .footer-navigation ul li a:hover{
+	color: #2b70fa;
+}
+
+.iyf-footer-area-dark .footer-copyright .copyright-text p{
+	color: #fff;
+}
+
+.iyf-footer-area-dark  .footer-copyright .apps-download-btn ul li a:hover{
+	color: #fff;
+}
+.iyf-footer-area-dark  .footer-copyright .apps-download-btn ul li a.item-2{
+	color: #fff;
+}

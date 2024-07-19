@@ -1,0 +1,84 @@
+/*==== rtl css ====*/
+
+
+
+.iyf-traffic-area.iyf-traffic-area-rtl .traffic-thumb {
+	left: 0;
+	right: auto;
+	transform: translateY(-50%) rotateY(-180deg);
+}
+
+
+.iyf-traffic-area-rtl .iyf-traffic-title{
+	padding-left: 220px;
+	padding-right: 0;
+}
+
+
+.iyf-traffic-area-rtl .iyf-traffic-academies .icon{
+	right: 0;
+	left: auto;
+}
+
+
+
+.iyf-faq-area-rtl .faq-accrodion .accrodion .accrodion-title::after,
+.iyf-faq-area-rtl .faq-accrodion .accrodion .accrodion-title::before{
+	right: auto;
+	left: 30px;
+}
+
+
+.iyf-project-area.iyf-project-area-rtl .iyf-project-box .iyf-project-thumb{
+	left: 70px;
+	right: auto;
+}
+
+
+
+.iyf-project-area-rtl .iyf-project-content .input-box input{
+	padding-left: 0;
+	padding-right: 30px;
+}
+
+
+.iyf-project-area-rtl .iyf-project-content .input-box button{
+	margin-left: 0;
+	margin-right: 10px;
+}
+
+
+
+
+
+.iyf-header-area-rtl .iyf-header-main-menu ul{
+	text-align: right;
+}
+
+
+
+
+
+.iyf-header-area-rtl .iyf-header-main-menu ul > li .sub-menu{
+	text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

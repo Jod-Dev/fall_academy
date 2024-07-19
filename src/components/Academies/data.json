@@ -1,0 +1,24 @@
+{
+  "academies": [
+    {
+      "id": 1,
+      "title": "Korean",
+      "description": "Learn about Korean language",
+      "price": "$99.99",
+      "level": "Beginner, Intermediate",
+      "age": "12+",
+      "schedule": "10:00 am & 11:30 am",
+      "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f"
+    },
+    {
+      "id": 2,
+      "title": "English",
+      "description": "Improve your English language skills",
+      "price": "$79.99",
+      "level": "Beginner, Intermediate, Advanced",
+      "age": "16+",
+      "schedule": "9:00 am & 1:00 pm",
+      "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f"
+    }
+  ]
+}
