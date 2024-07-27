@@ -85,7 +85,10 @@ function Navigation({ lang = false }) {
             <Link to="/about-us">About Us</Link>
           </li>
           <li>
-            <Link to="/academies">Academies</Link>
+            <Link to="/mind-lecture">Mind Lecture</Link>
+          </li>
+          <li>
+            <Link to="/academies">Academy</Link>
           </li>
           <li>
             <Link to="/registration">Registration</Link>

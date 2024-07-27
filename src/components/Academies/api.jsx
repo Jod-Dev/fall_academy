@@ -9,7 +9,7 @@ export const fetchAcademies = async () => {
       }, 1000); // Adjust timeout as needed (simulating delay)
     });
   } catch (error) {
-    console.error("Error fetching academies:", error);
+    // console.error("Error fetching academies:", error);
     throw error;
   }
 };

@@ -8,10 +8,13 @@ function HeroAbout() {
           <div className="row">
             <div className="col-lg-7">
               <div className="iyf-about-top-title">
-                <h2 className="title">
-                  The leading people Management platform
-                </h2>
-                <p>We offer you a panoply of cutting-edge options.</p>
+                <h2 className="title">Mind Lecture</h2>
+                <p>
+                  Mind Education covers essential developmental concepts and
+                  solutions to the problems of the heart, such as self-control,
+                  deep thinking, connection, and exchange through presentations
+                  that are designed for all ages.
+                </p>
               </div>
             </div>
           </div>
@@ -23,20 +26,21 @@ function HeroAbout() {
             <div className="col-lg-8">
               <div className="iyf-about-page-content">
                 <h3 className="title">
-                  Join our team to create the best digital solutions.
+                  Join us in exploring the forefront of mental and emotional
+                  well-being.
                 </h3>
                 <p>
-                  He nicked it up the duff a load of old tosh bleeder butty
-                  bugger all mate cheeky bugger bodge tickety boo, mush well
-                  Richard geeza buggered haggle david you mug I, such a fibber
-                  my good sir knackered down the pub baking cakes chancer golly
-                  gosh. Car boot give us a bell bits and hanky panky me old
-                  mucker fantastic in my flat so I said nice one he lost his
-                  bottle.
+                  At IYF Orlando, we are dedicated to providing you with
+                  cutting-edge insights and strategies through our Mind
+                  Lectures. Whether you're looking to enhance your personal
+                  development or gain new perspectives in professional settings,
+                  our lectures offer valuable tools and knowledge. Engage with
+                  leading experts and become part of a community committed to
+                  mental and emotional growth.
                 </p>
-                <a href="#">
-                  View all Members <i className="fal fa-arrow-right"></i>
-                </a>
+                {/* <a href="/lectures">
+                  Discover Our Lectures <i className="fal fa-arrow-right"></i>
+                </a> */}
               </div>
             </div>
           </div>

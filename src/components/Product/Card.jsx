@@ -2,7 +2,7 @@ import React from "react";
 import productImg from "../../assets/images/shop-grid-1.jpg";
 
 function Card({ cardData }) {
-  console.log(cardData);
+  // console.log(cardData);
   const handleError = (e) => {
     e.target.src = productImg;
   };

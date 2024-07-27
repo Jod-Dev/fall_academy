@@ -24,7 +24,7 @@ function AboutUsTwo() {
         breadcrumb={[
           {
             link: "/",
-            title: "Home",
+            title: "home",
           },
 
           {
@@ -33,13 +33,14 @@ function AboutUsTwo() {
           },
         ]}
       />{" "}
-      <AcademiesHomeThree
+      <academiesHomeThree
         style={{
           paddingTop: "90px",
         }}
       />{" "}
-      <FunFactHomeThree /> <WorkPartHomeEight className="pt-100" />{" "}
-      <TestimonialHomeEight /> <SignupHomeEight />{" "}
+      <AcademiesHomeThree />
+      <FunFactHomeThree />
+      <WorkPartHomeEight className="pt-100" /> <SignupHomeEight />{" "}
       <FooterHomeOne className="iyf-footer-about-area" /> <BackToTop />{" "}
     </>
   );

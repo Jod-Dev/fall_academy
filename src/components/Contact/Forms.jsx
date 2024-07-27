@@ -109,7 +109,8 @@ function Forms() {
               <div className="contact--info-area">
                 <h3>Get in touch</h3>
                 <p>
-                  Looking for help? Fill the form and start a new adventure.
+                  Have questions or need assistance? Fill out the form below to
+                  connect with us and start your journey.
                 </p>
                 <div className="single-info">
                   <h5>Address</h5>
@@ -145,7 +146,7 @@ function Forms() {
                   </a>
                   <a
                     className="insta"
-                    href="https://www.instagram.com/iyforlando/"
+                    href="https://www.instagram.com/iyf_orlando/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -156,8 +157,11 @@ function Forms() {
             </div>
             <div className="col-md-8">
               <div className="contact-form">
-                <h4>Let’s Connect</h4>
-                <p>Integer at lorem eget diam facilisis lacinia ac id massa.</p>
+                <h4>Contact Us</h4>
+                <p>
+                  Got a question or need assistance? Complete the form below and
+                  we'll get back to you shortly.
+                </p>
                 <form onSubmit={handleSubmit} className="row">
                   <div className="col-md-6">
                     <input
@@ -235,7 +239,10 @@ function Forms() {
                         onChange={handleTermsChange}
                       />
                       <label htmlFor="terms-conditions">
-                        I agree to the <a href="#">Terms & Conditions</a>
+                        I agree to the{" "}
+                        <a href="/terms-and-conditions" target="_blank">
+                          Terms & Conditions
+                        </a>
                       </label>
                     </div>
                   </div>

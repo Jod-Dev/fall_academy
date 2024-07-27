@@ -55,8 +55,10 @@ function ShowCaseHomeThree() {
           <div className="row">
             <div className="col-lg-12">
               <div className="iyf-section-title text-center">
-                <h3 className="iyf-title">Creative app showcase</h3>
-                <p>The app provides design and digital marketing.</p>
+                <h3 className="iyf-title">Academy</h3>
+                <p>
+                  Don't miss out on this opportunity to broaden your horizons.
+                </p>
               </div>
             </div>
           </div>

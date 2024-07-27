@@ -1,23 +1,11 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import HomeOne from "./components/HomeOne/index.jsx";
-import HomeTwo from "./components/HomeTwo/index.jsx";
-import HomeThree from "./components/HomeThree/index.jsx";
-import HomeFour from "./components/HomeFour/index.jsx";
-import HomeFive from "./components/HomeFive/index.jsx";
-import HomeSix from "./components/HomeSix/index.jsx";
-import HomeSeven from "./components/HomeSeven/index.jsx";
-import HomeEight from "./components/HomeEight/index.jsx";
-import HomeDark from "./components/HomeDark/index.jsx";
-import HomeRtl from "./components/HomeRtl/index.jsx";
-import News from "./components/News/index.jsx";
-import SingleNews from "./components/News/SingleNews.jsx";
 import Academies from "./components/Academies/index.jsx";
 import AboutUs from "./components/AboutUs/index.jsx";
 import Contact from "./components/Contact/index.jsx";
 import Error from "./components/Error/index.jsx";
 import AboutUsTwo from "./components/AboutUs/AboutUsTwo.jsx";
-import Shops from "./components/Shops/index.jsx";
-import ShopDetails from "./components/Shops/Details";
+
 import Layout from "./components/Helper/Layout.jsx";
 import Registration from "./components/Registration/index.jsx";
 
@@ -29,7 +17,7 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <HomeOne />,
-      },
+      } /*
       {
         path: "/home-two",
         element: <HomeTwo />,
@@ -74,12 +62,13 @@ const router = createBrowserRouter([
         path: "/news/single-news",
         element: <SingleNews />,
       },
+      */,
       {
         path: "/academies",
         element: <Academies />,
       },
       {
-        path: "/about-us1",
+        path: "/mind-lecture",
         element: <AboutUs />,
       },
       {
@@ -94,14 +83,6 @@ const router = createBrowserRouter([
       {
         path: "/about-us",
         element: <AboutUsTwo />,
-      },
-      {
-        path: "/shops",
-        element: <Shops />,
-      },
-      {
-        path: "/shops/shop-details",
-        element: <ShopDetails />,
       },
       {
         path: "*",

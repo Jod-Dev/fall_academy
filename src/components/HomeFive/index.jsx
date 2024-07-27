@@ -4,7 +4,7 @@ import BackToTop from "../BackToTop.jsx";
 import Cart from "../Cart/index.jsx";
 import TestimonialHomeOne from "../HomeOne/TestimonialHomeOne.jsx";
 import DownloadHomeThree from "../HomeThree/DownloadHomeThree.jsx";
-import academiesHomeThree from "../HomeThree/academiesHomeThree.jsx";
+import academiesHomeThree from "../HomeThree/AcademiesHomeThree.jsx";
 import ShowCaseHomeThree from "../HomeThree/ShowCaseHomeThree.jsx";
 import FeaturesHomeTwo from "../HomeTwo/FeaturesHomeTwo.jsx";
 import SponserHomeTwo from "../HomeTwo/SponserHomeTwo.jsx";

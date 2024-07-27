@@ -13,10 +13,11 @@ function HeroHomeOne({ className }) {
           <div className="row align-items-center">
             <div className="col-lg-6">
               <div className="iyf-hero-content">
-                <span>IYF Orlando Academy</span>
-                <h1 className="iyf-title">
-                  Welcome to our Fall Semester 2024.
+                <h1 className="iyf_orlando_academy_title">
+                  IYF Academy & Mind Lecture
                 </h1>
+                {/* <h3 className="iyf-title"> */}
+                <h2 className="">Welcome to our 2024 Fall Semester.</h2>
                 <p>
                   Join us for an exciting and enriching Fall Academy at IYF
                   Orlando! Our program is designed to inspire, educate, and

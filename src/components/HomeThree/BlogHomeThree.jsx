@@ -13,8 +13,11 @@ function BlogHomeThree() {
           <div className="row">
             <div className="col-lg-12">
               <div className="iyf-section-title text-center">
-                <h3 className="iyf-title">Latest blog posts</h3>
-                <p>The app provides design and digital marketing.</p>
+                <h3 className="iyf-title">Upcoming events</h3>
+                <p>
+                  Don’t miss out! Check out our schedule of upcoming events that
+                  are set to inspire and engage the IYF Orlando community.
+                </p>
               </div>
             </div>
           </div>
@@ -22,21 +25,21 @@ function BlogHomeThree() {
             <div className="col-lg-6">
               <div className="iyf-blog-item-3 mt-30">
                 <div className="thumb">
-                  <img src={BlogFour} alt="" />
+                  <img src={BlogFour} alt="Youth Empowerment Workshop" />
                 </div>
                 <div className="content">
                   <h5 className="title">
-                    <a href="/news/single-news">
-                      How to Improve Your App Store Position
-                    </a>
+                    <a href="/academies">IYF Orlando - 2024 Fall Academy</a>
                   </h5>
                   <div className="meta-item">
                     <ul>
                       <li>
-                        <i className="fal fa-clock" /> July 14, 2022
+                        <i className="fal fa-clock" /> August 17, 2024
                       </li>
                       <li>
-                        <i className="fal fa-comments" /> July 14, 2022
+                        <Link to="/events">
+                          <i className="fal fa-calendar-alt" /> Register Now
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -46,21 +49,24 @@ function BlogHomeThree() {
             <div className="col-lg-6">
               <div className="iyf-blog-item-3 mt-30">
                 <div className="thumb">
-                  <img src={BlogFive} alt="" />
+                  <img
+                    src={BlogFive}
+                    alt="Leadership and Team Building Conference"
+                  />
                 </div>
                 <div className="content">
                   <h5 className="title">
-                    <a href="/news/single-news">
-                      Introducing New App Design for our iOS App
-                    </a>
+                    <a href="/events/event-2">Taste of Korea Event</a>
                   </h5>
                   <div className="meta-item">
                     <ul>
                       <li>
-                        <i className="fal fa-clock" /> July 14, 2022
+                        <i className="fal fa-clock" /> September 14, 2024
                       </li>
                       <li>
-                        <i className="fal fa-comments" /> July 14, 2022
+                        <Link to="/events">
+                          <i className="fal fa-calendar-alt" /> Register Now
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -70,21 +76,23 @@ function BlogHomeThree() {
             <div className="col-lg-6">
               <div className="iyf-blog-item-3 mt-30">
                 <div className="thumb">
-                  <img src={BlogSix} alt="" />
+                  <img src={BlogSix} alt="Community Service Initiative" />
                 </div>
                 <div className="content">
                   <h5 className="title">
-                    <a href="/news/single-news">
-                      Engineering job is Becoming More interesting.
+                    <a href="/events/event-3">
+                      2024 Fall Academy - Presentation
                     </a>
                   </h5>
                   <div className="meta-item">
                     <ul>
                       <li>
-                        <i className="fal fa-clock" /> July 14, 2022
+                        <i className="fal fa-clock" /> November 23, 2024
                       </li>
                       <li>
-                        <i className="fal fa-comments" /> July 14, 2022
+                        <Link to="/events">
+                          <i className="fal fa-calendar-alt" /> Register Now
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -94,21 +102,21 @@ function BlogHomeThree() {
             <div className="col-lg-6">
               <div className="iyf-blog-item-3 mt-30">
                 <div className="thumb">
-                  <img src={BlogSeven} alt="" />
+                  <img src={BlogSeven} alt="Mental Health Awareness Seminar" />
                 </div>
                 <div className="content">
                   <h5 className="title">
-                    <a href="/news/single-news">
-                      20 Myths About Mobile Applications
-                    </a>
+                    <a href="/events/event-4">Dallas Korean Camp</a>
                   </h5>
                   <div className="meta-item">
                     <ul>
                       <li>
-                        <i className="fal fa-clock" /> July 14, 2022
+                        <i className="fal fa-clock" /> December 20, 2024
                       </li>
                       <li>
-                        <i className="fal fa-comments" /> July 14, 2022
+                        <Link to="/events">
+                          <i className="fal fa-calendar-alt" /> Register Now
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -117,8 +125,8 @@ function BlogHomeThree() {
             </div>
             <div className="col-lg-12">
               <div className="blog-btn text-center mt-60">
-                <Link className="main-btn" to="/news">
-                  View All Posts <i className="fal fa-arrow-right" />
+                <Link className="main-btn" to="/events">
+                  View All Events <i className="fal fa-arrow-right" />
                 </Link>
               </div>
             </div>

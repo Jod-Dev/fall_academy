@@ -19,7 +19,7 @@ function FooterHomeThree({ className }) {
                   iyf WordPress is theme is the last theme you will ever have.
                 </p>
                 <a href="#">
-                  Read Moree <i className="fal fa-arrow-right" />
+                  Read More <i className="fal fa-arrow-right" />
                 </a>
                 <div className="social mt-30">
                   <ul>

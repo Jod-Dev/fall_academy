@@ -4,17 +4,15 @@ import BackToTop from "../BackToTop.jsx";
 import Drawer from "../Mobile/Drawer.jsx";
 import BlogHomeOne from "./BlogHomeOne.jsx";
 import FaqHomeOne from "./FaqHomeOne.jsx";
-import FeaturesHomeOne from "./FeaturesHomeOne.jsx";
 import FooterHomeOne from "./FooterHomeOne.jsx";
 import HeroHomeOne from "./HeroHomeOne.jsx";
 import HomeOneHeader from "./HomeOneHeader.jsx";
-import PricingHomeOne from "./PricingHomeOne.jsx";
 import ProjectHomeOne from "./ProjectHomeOne.jsx";
-import academiesHomeOne from "./academiesHomeOne.jsx";
-import TeamHomeOne from "./TeamHomeOne.jsx";
+import AcademiesHomeOne from "./academiesHomeOne.jsx";
 import TestimonialHomeOne from "./TestimonialHomeOne.jsx";
-import TrafficHomeOne from "./TrafficHomeOne.jsx";
-import academiesHomeTwo from "../HomeTwo/academiesHomeTwo.jsx";
+import ShowCaseHomeThree from "../HomeThree/ShowCaseHomeThree.jsx";
+import BlogHomeThree from "../HomeThree/BlogHomeThree.jsx";
+import FeaturesHomeTwo from "../HomeTwo/FeaturesHomeTwo.jsx";
 
 function HomeOne() {
   const [drawer, drawerAction] = useToggle(false);
@@ -24,15 +22,12 @@ function HomeOne() {
       <Drawer drawer={drawer} action={drawerAction.toggle} />
       <HomeOneHeader action={drawerAction.toggle} />
       <HeroHomeOne />
-      <academiesHomeOne />
-      <academiesHomeTwo />
-      <FeaturesHomeOne />
-      <TrafficHomeOne />
+      <AcademiesHomeOne />
+      <FeaturesHomeTwo />
+      <ShowCaseHomeThree />
       <TestimonialHomeOne />
-      <TeamHomeOne />
-      <PricingHomeOne />
+      <BlogHomeThree />
       <FaqHomeOne />
-      <BlogHomeOne />
       <ProjectHomeOne />
       <FooterHomeOne />
       <BackToTop />

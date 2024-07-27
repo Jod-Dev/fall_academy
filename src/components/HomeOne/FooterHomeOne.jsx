@@ -20,7 +20,7 @@ function FooterHomeOne({ className }) {
                   cultural, and volunteer programs
                 </p>
                 <a to="/about-us">
-                  Read Moree <i className="fal fa-arrow-right" />
+                  Read More <i className="fal fa-arrow-right" />
                 </a>
                 <div className="social mt-30">
                   <ul>
@@ -35,7 +35,7 @@ function FooterHomeOne({ className }) {
                     </li>
                     <li>
                       <a
-                        href="https://www.instagram.com/iyforlando/"
+                        href="https://www.instagram.com/iyf_orlando/"
                         target="_blank"
                         rel="noreferrer"
                       >

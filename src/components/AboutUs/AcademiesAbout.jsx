@@ -8,8 +8,14 @@ function AcademiesAbout() {
           <div className="row align-items-end">
             <div className="col-lg-6 col-md-8">
               <div className="iyf-section-title">
-                <h3 className="iyf-title">We’re driven by our values</h3>
-                <p>The app provides design and digital marketing. </p>
+                <h3 className="iyf-title">
+                  Empowering Minds through IYF Orlando Mind Lectures
+                </h3>
+                <p>
+                  Discover how IYF Orlando Mind Lectures can transform your
+                  perspective and equip you with valuable insights for personal
+                  and professional growth.
+                </p>
               </div>
             </div>
           </div>
@@ -21,10 +27,13 @@ function AcademiesAbout() {
                 data-wow-delay="200ms"
               >
                 <div className="icon">
-                  <i className="fal fa-tv"></i>
+                  <i className="fal fa-brain"></i>
                 </div>
-                <h4 className="title">Carefully designed</h4>
-                <p>He lost his bottle loo don't get shirty with me ruddy.</p>
+                <h4 className="title">Insightful Sessions</h4>
+                <p>
+                  Our Mind Lectures offer profound insights into mental health,
+                  emotional intelligence, and personal development.
+                </p>
               </div>
             </div>
             <div className="col-lg-4 col-md-6">
@@ -34,10 +43,13 @@ function AcademiesAbout() {
                 data-wow-delay="400ms"
               >
                 <div className="icon">
-                  <i className="fal fa-code"></i>
+                  <i className="fal fa-lightbulb"></i>
                 </div>
-                <h4 className="title">Clean Modern Code</h4>
-                <p>He lost his bottle loo don't get shirty with me ruddy.</p>
+                <h4 className="title">Innovative Techniques</h4>
+                <p>
+                  Learn about the latest techniques and strategies in mental
+                  well-being and personal growth.
+                </p>
               </div>
             </div>
             <div className="col-lg-4 col-md-6">
@@ -47,10 +59,13 @@ function AcademiesAbout() {
                 data-wow-delay="600ms"
               >
                 <div className="icon">
-                  <i className="fal fa-user-friends"></i>
+                  <i className="fal fa-users"></i>
                 </div>
-                <h4 className="title">User Interactive</h4>
-                <p>He lost his bottle loo don't get shirty with me ruddy.</p>
+                <h4 className="title">Interactive Discussions</h4>
+                <p>
+                  Engage in dynamic discussions and workshops designed to foster
+                  a deeper understanding of mental health and personal growth.
+                </p>
               </div>
             </div>
             <div className="col-lg-4 col-md-6">
@@ -60,10 +75,13 @@ function AcademiesAbout() {
                 data-wow-delay="200ms"
               >
                 <div className="icon">
-                  <i className="fal fa-mobile"></i>
+                  <i className="fal fa-calendar-check"></i>
                 </div>
-                <h4 className="title">Choose a App</h4>
-                <p>He lost his bottle loo don't get shirty with me ruddy.</p>
+                <h4 className="title">Flexible Scheduling</h4>
+                <p>
+                  Our lectures are scheduled to accommodate your busy lifestyle,
+                  offering both in-person and virtual options.
+                </p>
               </div>
             </div>
             <div className="col-lg-4 col-md-6">
@@ -73,10 +91,13 @@ function AcademiesAbout() {
                 data-wow-delay="400ms"
               >
                 <div className="icon">
-                  <i className="fal fa-retweet"></i>
+                  <i className="fal fa-sync-alt"></i>
                 </div>
-                <h4 className="title">Seamless Sync</h4>
-                <p>He lost his bottle loo don't get shirty with me ruddy.</p>
+                <h4 className="title">Seamless Integration</h4>
+                <p>
+                  Easily integrate what you learn into your daily life and
+                  professional practices with actionable insights and tools.
+                </p>
               </div>
             </div>
             <div className="col-lg-4 col-md-6">
@@ -88,8 +109,11 @@ function AcademiesAbout() {
                 <div className="icon">
                   <i className="fal fa-bell"></i>
                 </div>
-                <h4 className="title">Notifications Settings</h4>
-                <p>He lost his bottle loo don't get shirty with me ruddy.</p>
+                <h4 className="title">Stay Updated</h4>
+                <p>
+                  Receive timely updates and notifications about upcoming
+                  lectures and events to never miss out on valuable content.
+                </p>
               </div>
             </div>
           </div>

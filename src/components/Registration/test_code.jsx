@@ -282,10 +282,9 @@ function RegistrationForms() {
           <div className="row">
             <div className="col-md-4">
               <div className="contact--info-area">
-                <h3>Join Us Today!</h3>
+                <h3>Get in touch</h3>
                 <p>
-                  Ready to embark on your learning journey? Complete the form
-                  below to begin your adventure with us.
+                  Looking for help? Fill the form and start a new adventure.
                 </p>
                 <div className="single-info">
                   <h5>Address</h5>
@@ -533,6 +532,7 @@ function RegistrationForms() {
                               invalid={!!errors.zipCode}
                               maxLength={5}
                               placeholder="Zip Code"
+                              style={inputStyle}
                             />
                             <FormFeedback>{errors.zipCode}</FormFeedback>
                           </FormGroup>
@@ -548,7 +548,7 @@ function RegistrationForms() {
                           />
                           I have read and agree to the{" "}
                           <a href="/terms-and-conditions" target="_blank">
-                            Terms & Conditions
+                            Terms and Conditions
                           </a>
                         </Label>
                         {errors.termsAccepted && (

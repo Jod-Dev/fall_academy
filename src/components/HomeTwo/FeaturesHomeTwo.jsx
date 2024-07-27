@@ -12,13 +12,10 @@ function FeaturesHomeTwo() {
           <div className="row justify-content-center">
             <div className="col-lg-12">
               <div className="iyf-section-title iyf-section-title-2 text-center">
-                <h3 className="iyf-title">
-                  Wherever you need <br />
-                  us the most
-                </h3>
+                <h3 className="iyf-title">Mind Lecture</h3>
                 <p>
-                  The full monty spiffing good time no biggie cack grub
-                  fantastic.
+                  Join us in exploring the forefront of mental and emotional
+                  well-being.
                 </p>
               </div>
             </div>
@@ -27,16 +24,32 @@ function FeaturesHomeTwo() {
             <div className="col-lg-6">
               <div className="iyf-features-boxes">
                 <div className="iyf-features-box-item">
-                  <h4 className="title">Well Integrated</h4>
-                  <p>The bee's knees chancer car boot absolutely.</p>
+                  <a href="/mind-lecture">
+                    <h4 className="title">Insightful Sessions</h4>
+                  </a>
+                  <p>
+                    Our Mind Lectures offer profound insights into mental
+                    health, emotional intelligence, and personal development.
+                  </p>
                 </div>
                 <div className="iyf-features-box-item item-2">
-                  <h4 className="title">Clean and modern Design</h4>
-                  <p>The bee's knees chancer car boot absolutely.</p>
+                  <a href="/mind-lecture">
+                    <h4 className="title">Innovative Techniques</h4>
+                  </a>
+                  <p>
+                    Learn about the latest techniques and strategies in mental
+                    well-being and personal growth.
+                  </p>
                 </div>
                 <div className="iyf-features-box-item item-3">
-                  <h4 className="title">Light and dark mode</h4>
-                  <p>The bee's knees chancer car boot absolutely.</p>
+                  <a href="/mind-lecture">
+                    <h4 className="title">Interactive Discussions</h4>
+                  </a>
+                  <p>
+                    Engage in dynamic discussions and workshops designed to
+                    foster a deeper understanding of mental health and personal
+                    growth.
+                  </p>
                 </div>
               </div>
             </div>
@@ -46,19 +59,19 @@ function FeaturesHomeTwo() {
                 data-wow-duration="2000ms"
                 data-wow-delay="200ms"
               >
-                <img src={featureThumb} alt="" />
+                <img src={featureThumb} alt="Mind Lecture Features" />
               </div>
             </div>
           </div>
         </div>
         <div className="features-shape-1">
-          <img src={shape15} alt="" />
+          <img src={shape15} alt="Shape 15" />
         </div>
         <div className="features-shape-2">
-          <img src={shape14} alt="" />
+          <img src={shape14} alt="Shape 14" />
         </div>
         <div className="features-shape-3">
-          <img src={shape13} alt="" />
+          <img src={shape13} alt="Shape 13" />
         </div>
       </section>
     </>

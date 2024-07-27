@@ -1,7 +1,7 @@
 import React from "react";
-import iconOne from "../../assets/images/icon/1.png";
-import iconTwo from "../../assets/images/icon/2.png";
-import iconThree from "../../assets/images/icon/3.png";
+import iconOne from "../../assets/images/icon/exchange.png";
+import iconTwo from "../../assets/images/icon/trophy.png";
+import iconThree from "../../assets/images/icon/partners.png";
 import iconFour from "../../assets/images/icon/4.png";
 
 function academiesHomeThree() {
@@ -46,7 +46,7 @@ function academiesHomeThree() {
                 <h4 className="iyf-title">Change</h4>
                 <p>True change of life that begins from the heart.</p>
                 {/* <a href="#">
-                  Read Moree <i className="fal fa-arrow-right" />
+                  Read More <i className="fal fa-arrow-right" />
                 </a> */}
               </div>
             </div>
@@ -73,7 +73,7 @@ function academiesHomeThree() {
                   endless possibilities IF International Youth Fellowship.
                 </p>
                 {/* <a href="#">
-                  Read Moree <i className="fal fa-arrow-right" />
+                  Read More <i className="fal fa-arrow-right" />
                 </a> */}
               </div>
             </div>
@@ -100,7 +100,7 @@ function academiesHomeThree() {
                   language and religion.
                 </p>
                 {/* <a href="#">
-                  Read Moree <i className="fal fa-arrow-right" />
+                  Read More <i className="fal fa-arrow-right" />
                 </a> */}
               </div>
             </div>

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 function FaqHomeOne({ className }) {
   const [showQues, setQues] = useState(1);
@@ -12,8 +13,11 @@ function FaqHomeOne({ className }) {
           <div className="row">
             <div className="col-lg-12">
               <div className="iyf-section-title text-center">
-                <h3 className="iyf-title">Frequently asked questions</h3>
-                <p>Different layouts and styles for team sections.</p>
+                <h3 className="iyf-title">Frequently Asked Questions</h3>
+                <p>
+                  Have questions about IYF Orlando, Mind Lecture, or IYF Orlando
+                  Academy? Find your answers here.
+                </p>
               </div>
             </div>
           </div>
@@ -34,7 +38,7 @@ function FaqHomeOne({ className }) {
                   >
                     <div className="accrodion-inner">
                       <div className="accrodion-title">
-                        <h4>Where do I usually find FAQs in a page?</h4>
+                        <h4>What is IYF Orlando?</h4>
                       </div>
                       <div
                         className="accrodion-content"
@@ -44,9 +48,10 @@ function FaqHomeOne({ className }) {
                       >
                         <div className="inner">
                           <p>
-                            Naff Oxford vagabond in my flat chinwag blatant grub
-                            tomfoolery that I bits and bobs up the duff cras
-                            boot bevvy no biggie.
+                            IYF Orlando is a non-profit organization dedicated
+                            to fostering leadership and personal growth among
+                            youth through various programs, workshops, and
+                            community activities.
                           </p>
                         </div>
                       </div>
@@ -58,7 +63,7 @@ function FaqHomeOne({ className }) {
                   >
                     <div className="accrodion-inner">
                       <div className="accrodion-title">
-                        <h4>Where do I usually find FAQs in a page?</h4>
+                        <h4>What is a Mind Lecture?</h4>
                       </div>
                       <div
                         className="accrodion-content"
@@ -68,9 +73,11 @@ function FaqHomeOne({ className }) {
                       >
                         <div className="inner">
                           <p>
-                            Naff Oxford vagabond in my flat chinwag blatant grub
-                            tomfoolery that I bits and bobs up the duff cras
-                            boot bevvy no biggie.
+                            A Mind Lecture is a unique program designed by IYF
+                            that focuses on mental and emotional health. It
+                            provides practical tools and insights to help
+                            individuals manage stress, develop a positive
+                            mindset, and achieve personal growth.
                           </p>
                         </div>
                       </div>
@@ -95,7 +102,7 @@ function FaqHomeOne({ className }) {
                   >
                     <div className="accrodion-inner">
                       <div className="accrodion-title">
-                        <h4>Where do I usually find FAQs in a page?</h4>
+                        <h4>What is the IYF Orlando Academy?</h4>
                       </div>
                       <div
                         className="accrodion-content"
@@ -105,9 +112,11 @@ function FaqHomeOne({ className }) {
                       >
                         <div className="inner">
                           <p>
-                            Naff Oxford vagabond in my flat chinwag blatant grub
-                            tomfoolery that I bits and bobs up the duff cras
-                            boot bevvy no biggie.
+                            The IYF Orlando Academy is an intensive training
+                            program that equips young people with the skills,
+                            knowledge, and mindset needed to become effective
+                            leaders in their communities. The academy includes
+                            workshops, mentoring, and practical experiences.
                           </p>
                         </div>
                       </div>
@@ -119,7 +128,7 @@ function FaqHomeOne({ className }) {
                   >
                     <div className="accrodion-inner">
                       <div className="accrodion-title">
-                        <h4>Where do I usually find FAQs in a page?</h4>
+                        <h4>How can I participate in IYF Orlando programs?</h4>
                       </div>
                       <div
                         className="accrodion-content"
@@ -129,9 +138,11 @@ function FaqHomeOne({ className }) {
                       >
                         <div className="inner">
                           <p>
-                            Naff Oxford vagabond in my flat chinwag blatant grub
-                            tomfoolery that I bits and bobs up the duff cras
-                            boot bevvy no biggie.
+                            You can participate in IYF Orlando programs by
+                            visiting our website and registering for the
+                            programs that interest you. We offer a variety of
+                            events and activities throughout the year, including
+                            the IYF Orlando Academy and Mind Lectures.
                           </p>
                         </div>
                       </div>
@@ -143,8 +154,7 @@ function FaqHomeOne({ className }) {
             <div className="col-lg-12">
               <div className="faq-text text-center pt-40">
                 <p>
-                  Can't find an answer?{" "}
-                  <a href="mailto:demo@gmail.com">Email us</a>
+                  Can't find an answer? <Link to="/contact">Email us</Link>
                 </p>
               </div>
             </div>

@@ -362,7 +362,7 @@ function Drawer({ drawer, action, lang }) {
 
                         <li>
                           <a
-                            href="https://www.instagram.com/iyforlando/"
+                            href="https://www.instagram.com/iyf_orlando/"
                             target="_blank"
                             rel="noreferrer"
                           >

@@ -16,8 +16,8 @@ function ProjectHomeOne({ className }) {
                 <div className="row">
                   <div className="col-lg-6">
                     <div className="iyf-project-content">
-                      <h3 className="title">Start your project with iyf.</h3>
-                      <p>We will email you only about this product.</p>
+                      <h3 className="title">Suscribe</h3>
+                      <p>Want to stay informed about all our activities?</p>
                       <form action="#">
                         <div className="input-box mt-30">
                           <input type="text" placeholder="Your Email" />

@@ -1,5 +1,7 @@
 import React from "react";
-import workThumb from "../../assets/images/how-it-work-thumb.png";
+
+// import workThumb from "../../assets/images/how-it-work-thumb.png";
+import workThumb from "../../assets/images/about-thumb-5.png";
 
 function WorkPartHomeEight() {
   return (
@@ -15,15 +17,18 @@ function WorkPartHomeEight() {
             <div className="col-lg-6">
               <div className="iyf-how-it-work-content">
                 <h2 className="title">Our Activities</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>
+                  Discover a world of exciting events and enriching experiences
+                  designed to inspire and engage.
+                </p>
                 <div className="row">
                   <div className="col-sm-6">
                     <div className="how-it-work-box">
                       <span>1</span>
                       <h5 className="title">
-                        Global
+                        IYF Academy &
                         <br />
-                        Education
+                        Mind Lecture
                       </h5>
                     </div>
                   </div>
@@ -31,8 +36,8 @@ function WorkPartHomeEight() {
                     <div className="how-it-work-box">
                       <span>2</span>
                       <h5 className="title">
-                        Cultural <br />
-                        Exchange
+                        Taste of <br />
+                        Korea
                       </h5>
                     </div>
                   </div>
@@ -40,8 +45,8 @@ function WorkPartHomeEight() {
                     <div className="how-it-work-box">
                       <span>3</span>
                       <h5 className="title">
-                        International <br />
-                        Exchange
+                        Trip to <br />
+                        Korea
                       </h5>
                     </div>
                   </div>
@@ -49,8 +54,8 @@ function WorkPartHomeEight() {
                     <div className="how-it-work-box">
                       <span>4</span>
                       <h5 className="title">
-                        Social <br />
-                        Volunteer{" "}
+                        Cooking <br />
+                        Class
                       </h5>
                     </div>
                   </div>

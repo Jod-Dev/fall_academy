@@ -17,7 +17,7 @@ function Shops() {
       .then((res) => res.json())
       .then((data) => setProducts(data))
       .catch((err) => {
-        console.error(err);
+        // console.error(err);
       });
   }, []);
 

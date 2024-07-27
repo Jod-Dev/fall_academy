@@ -19,7 +19,7 @@ function FooterHomeFive() {
                   iyf WordPress is theme is the last theme you will ever have.
                 </p>
                 <a href="#">
-                  Read Moree <i className="fal fa-arrow-right"></i>
+                  Read More <i className="fal fa-arrow-right"></i>
                 </a>
                 <div className="social mt-30">
                   <ul>

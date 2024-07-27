@@ -19,8 +19,8 @@ function AboutUs() {
       <HeaderAbout drawer={drawer} action={drawerAction.toggle} />
       <HeroAbout />
       <AcademiesAbout />
-      <TeamAbout />
-      <SponserHomeTwo />
+      {/* <TeamAbout /> */}
+      {/* <SponserHomeTwo /> */}
       <SignupHomeEight />
       <FooterHomeOne className="iyf-footer-about-area" />
       <BackToTop />

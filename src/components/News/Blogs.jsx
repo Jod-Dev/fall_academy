@@ -30,7 +30,7 @@ function Blogs() {
                 </a>
               </h3>
               <a className="read-more" href="single-post.html">
-                Read Moree<i className="fal fa-arrow-right"></i>
+                Read More<i className="fal fa-arrow-right"></i>
               </a>
             </div>
           </div>
@@ -53,7 +53,7 @@ function Blogs() {
                 </a>
               </h3>
               <a className="read-more" href="/news/single-news">
-                Read Moree<i className="fal fa-arrow-right"></i>
+                Read More<i className="fal fa-arrow-right"></i>
               </a>
             </div>
           </div>
@@ -76,7 +76,7 @@ function Blogs() {
                 </a>
               </h3>
               <a className="read-more" href="/news/single-news">
-                Read Moree<i className="fal fa-arrow-right"></i>
+                Read More<i className="fal fa-arrow-right"></i>
               </a>
             </div>
           </div>
@@ -99,7 +99,7 @@ function Blogs() {
                 </a>
               </h3>
               <a className="read-more" href="/news/single-news">
-                Read Moree<i className="fal fa-arrow-right"></i>
+                Read More<i className="fal fa-arrow-right"></i>
               </a>
             </div>
           </div>
@@ -122,7 +122,7 @@ function Blogs() {
                 </a>
               </h3>
               <a className="read-more" href="single-post.html">
-                Read Moree<i className="fal fa-arrow-right"></i>
+                Read More<i className="fal fa-arrow-right"></i>
               </a>
             </div>
           </div>
@@ -145,7 +145,7 @@ function Blogs() {
                 </a>
               </h3>
               <a className="read-more" href="single-post.html">
-                Read Moree<i className="fal fa-arrow-right"></i>
+                Read More<i className="fal fa-arrow-right"></i>
               </a>
             </div>
           </div>
@@ -168,7 +168,7 @@ function Blogs() {
                 </a>
               </h3>
               <a className="read-more" href="single-post.html">
-                Read Moree<i className="fal fa-arrow-right"></i>
+                Read More<i className="fal fa-arrow-right"></i>
               </a>
             </div>
           </div>
@@ -191,7 +191,7 @@ function Blogs() {
                 </a>
               </h3>
               <a className="read-more" href="single-post.html">
-                Read Moree<i className="fal fa-arrow-right"></i>
+                Read More<i className="fal fa-arrow-right"></i>
               </a>
             </div>
           </div>

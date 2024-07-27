@@ -1,12 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import BlogImg1 from "../../assets/images/blog/p1.jpg";
-import BlogImg2 from "../../assets/images/blog/p2.jpg";
-import BlogImg3 from "../../assets/images/blog/p3.jpg";
-import BlogImg4 from "../../assets/images/blog/p4.jpg";
+
 import "./AcademiesSideBar.css"; // Assuming you have a CSS file for custom styles
 
-function AcademiesSideBar() {
+function AcademiesSideBar({ onSearch, onFilter, categoriesCount }) {
+  const handleSearchChange = (event) => {
+    onSearch(event.target.value);
+  };
+
+  const handleCategoryClick = (category) => {
+    onFilter(category);
+  };
+
   return (
     <div className="blog-sidebar">
       <aside className="widget widget-search mb-4">
@@ -16,6 +21,7 @@ function AcademiesSideBar() {
             name="query"
             placeholder="Search..."
             className="form-control"
+            onChange={handleSearchChange}
           />
           <button type="submit" className="btn btn-primary ms-2">
             <i className="fal fa-search"></i>
@@ -26,24 +32,48 @@ function AcademiesSideBar() {
         <h3 className="widget-title">Categories</h3>
         <ul className="list-group list-group-flush">
           <li className="list-group-item d-flex justify-content-between align-items-center">
-            <Link to="/categories/language">Language Academies</Link>
-            <span className="badge bg-primary rounded-pill">24</span>
+            <Link to="#" onClick={() => handleCategoryClick("")}>
+              All
+            </Link>
+            <span className="badge bg-primary rounded-pill">
+              {categoriesCount.total}
+            </span>
           </li>
           <li className="list-group-item d-flex justify-content-between align-items-center">
-            <Link to="/categories/sports">Sports Academies</Link>
-            <span className="badge bg-primary rounded-pill">15</span>
+            <Link to="#" onClick={() => handleCategoryClick("Language")}>
+              Language
+            </Link>
+            <span className="badge bg-primary rounded-pill">
+              {categoriesCount.language}
+            </span>
           </li>
           <li className="list-group-item d-flex justify-content-between align-items-center">
-            <Link to="/categories/music">Music Academies</Link>
-            <span className="badge bg-primary rounded-pill">8</span>
+            <Link to="#" onClick={() => handleCategoryClick("Sports")}>
+              Sports
+            </Link>
+            <span className="badge bg-primary rounded-pill">
+              {categoriesCount.sports}
+            </span>
           </li>
           <li className="list-group-item d-flex justify-content-between align-items-center">
-            <Link to="/categories/art">Art Academies</Link>
-            <span className="badge bg-primary rounded-pill">13</span>
+            <Link to="#" onClick={() => handleCategoryClick("Music")}>
+              Music
+            </Link>
+            <span className="badge bg-primary rounded-pill">
+              {categoriesCount.music}
+            </span>
+          </li>
+          <li className="list-group-item d-flex justify-content-between align-items-center">
+            <Link to="#" onClick={() => handleCategoryClick("Art")}>
+              Art
+            </Link>
+            <span className="badge bg-primary rounded-pill">
+              {categoriesCount.art}
+            </span>
           </li>
         </ul>
       </aside>
-      <aside className="widget widget-trend-post mb-4">
+      {/* <aside className="widget widget-trend-post mb-4">
         <h3 className="widget-title">Popular Posts</h3>
         <div className="popular-post d-flex mb-3">
           <Link to="/posts/1">
@@ -89,51 +119,37 @@ function AcademiesSideBar() {
             <span className="text-muted">July 4, 2020</span>
           </div>
         </div>
-      </aside>
+      </aside> */}
       <aside className="widget">
         <h3 className="widget-title">Popular Tags</h3>
         <div className="tags">
           <Link
-            to="/tags/language"
+            to="#"
+            onClick={() => handleCategoryClick("Language")}
             className="btn btn-outline-primary btn-sm me-2 mb-2"
           >
             Language
           </Link>
           <Link
-            to="/tags/sports"
+            to="#"
+            onClick={() => handleCategoryClick("Sports")}
             className="btn btn-outline-primary btn-sm me-2 mb-2"
           >
             Sports
           </Link>
           <Link
-            to="/tags/music"
+            to="#"
+            onClick={() => handleCategoryClick("Music")}
             className="btn btn-outline-primary btn-sm me-2 mb-2"
           >
             Music
           </Link>
           <Link
-            to="/tags/art"
+            to="#"
+            onClick={() => handleCategoryClick("Art")}
             className="btn btn-outline-primary btn-sm me-2 mb-2"
           >
             Art
-          </Link>
-          <Link
-            to="/tags/creative"
-            className="btn btn-outline-primary btn-sm me-2 mb-2"
-          >
-            Creative
-          </Link>
-          <Link
-            to="/tags/education"
-            className="btn btn-outline-primary btn-sm me-2 mb-2"
-          >
-            Education
-          </Link>
-          <Link
-            to="/tags/motivation"
-            className="btn btn-outline-primary btn-sm me-2 mb-2"
-          >
-            Motivation
           </Link>
         </div>
       </aside>
