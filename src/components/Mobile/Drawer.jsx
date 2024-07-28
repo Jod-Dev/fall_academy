@@ -230,7 +230,7 @@ function Drawer({ drawer, action, lang }) {
                     </div>
                     <div id="menu" className="text-left ">
                       <ul className="offcanvas_main_menu">
-                        <li
+                        {/* <li
                           onClick={(e) => handler(e, "home")}
                           id="home"
                           className="menu-item-has-children active"
@@ -276,14 +276,50 @@ function Drawer({ drawer, action, lang }) {
                               <Link to="/home-rtl">Home Rtl</Link>
                             </li>
                           </ul>
-                        </li>
+                        </li> */}
                         <li
-                          onClick={(e) => handler(e, "academies")}
-                          id="academies"
+                          onClick={(e) => handler(e, "home")}
+                          id="home"
                           className="menu-item-has-children active"
                         >
-                          <a href="/academy">Academies</a>
+                          <a href="/">Home</a>
                         </li>
+                        <li
+                          onClick={(e) => handler(e, "about-us")}
+                          id="about-us"
+                          className="menu-item-has-children active"
+                        >
+                          <a href="/about-us">About Us</a>
+                        </li>
+                        <li
+                          onClick={(e) => handler(e, "mind-lecture")}
+                          id="mind-lecture"
+                          className="menu-item-has-children active"
+                        >
+                          <a href="/mind-lecture">Mind Lecture</a>
+                        </li>
+                        <li
+                          onClick={(e) => handler(e, "academy")}
+                          id="academy"
+                          className="menu-item-has-children active"
+                        >
+                          <a href="/academy">Academy</a>
+                        </li>
+                        <li
+                          onClick={(e) => handler(e, "registration")}
+                          id="registration"
+                          className="menu-item-has-children active"
+                        >
+                          <a href="/registration">Registration</a>
+                        </li>
+                        <li
+                          onClick={(e) => handler(e, "contact")}
+                          id="contact"
+                          className="menu-item-has-children active"
+                        >
+                          <a href="/contact">Contact</a>
+                        </li>
+                        {/*
                         <li
                           onClick={(e) => handler(e, "pages")}
                           id="pages"
@@ -346,6 +382,7 @@ function Drawer({ drawer, action, lang }) {
                         >
                           <Link to="/contact">Contact</Link>
                         </li>
+                        */}
                       </ul>
                     </div>
                     <div className="offcanvas-social">
