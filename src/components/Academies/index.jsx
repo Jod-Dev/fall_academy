@@ -72,7 +72,7 @@ function Academies() {
         title="Academy"
         breadcrumb={[
           { link: "/", title: "home" },
-          { link: "/academies", title: "academy" },
+          { link: "/academy", title: "academy" },
         ]}
       />
       <section className="blogpage-section">

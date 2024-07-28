@@ -16,7 +16,7 @@ function HeaderHomeEight({ action }) {
               <div className="col-lg-2 col-md-4 col-sm-5 col-6 order-1 order-sm-1">
                 <div className="iyf-logo-box">
                   <a href="/">
-                    <img src={logo} alt="" />
+                    <img className="iyf-logo" src={logo} alt="IYF Orlando" />
                   </a>
                 </div>
               </div>

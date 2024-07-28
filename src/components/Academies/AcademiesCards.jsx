@@ -1,6 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./AcademiesCards.css"; // Ensure you have a CSS file for custom styles
+import { Link } from "react-router-dom";
+import "./AcademiesCards.css";
+
+// Function to convert academy titles to URL-friendly format
+const toUrlFriendly = (title) => {
+  return title
+    .toLowerCase()
+    .replace(/\s+/g, "|")
+    .replace(/[^a-z0-9|]/g, "");
+};
 
 function AcademiesCards({ academies }) {
   return (
@@ -12,12 +21,12 @@ function AcademiesCards({ academies }) {
             <div className="card-body">
               <div className="card-meta">
                 <h5 className="card-title">
-                  <a
-                    href={`/academies/${academy.id}`}
+                  <Link
+                    to={`/academy/${toUrlFriendly(academy.title)}`}
                     className="text-decoration-none"
                   >
                     {academy.title}
-                  </a>
+                  </Link>
                 </h5>
                 <p className="card-text">{academy.catchPhrase}</p>
               </div>
@@ -31,10 +40,6 @@ function AcademiesCards({ academies }) {
                 <span className="meta-item">
                   <i className="fal fa-user"></i> {academy.age}
                 </span>
-                {/* <div className="info-item">
-                  <i className="fal fa-calendar-day"></i>
-                  <span className="info-text"> {academy.schedule}</span>
-                </div> */}
                 <div className="info-item">
                   <i className="fal fa-dollar-sign"></i>
                   <span className="info-text"> {academy.price}</span>

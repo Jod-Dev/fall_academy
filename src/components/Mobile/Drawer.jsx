@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../assets/images/iyf-full-logo.webp";
+import logo from "../../assets/images/logo.jpg";
 
 function Drawer({ drawer, action, lang }) {
   const [itemSize, setSize] = useState("0px");
@@ -36,7 +36,7 @@ function Drawer({ drawer, action, lang }) {
                       </a>
                     </div>
                     <div className="offcanvas-brand text-center mb-40">
-                      <img src={logo} alt="" />
+                      <img className="iyf-logo" src={logo} alt="IYF Orlando" />
                     </div>
                     <div id="menu" className="text-left ">
                       <ul className="offcanvas_main_menu">
@@ -94,7 +94,7 @@ function Drawer({ drawer, action, lang }) {
                           id="academies"
                           className="menu-item-has-children active"
                         >
-                          <Link to="/academies">خدمة</Link>
+                          <Link to="/academy">خدمة</Link>
                         </li>
                         <li
                           onClick={(e) => handler(e, "pages")}
@@ -226,7 +226,7 @@ function Drawer({ drawer, action, lang }) {
                       </a>
                     </div>
                     <div className="offcanvas-brand text-center mb-40">
-                      <img src={logo} alt="" />
+                      <img className="iyf-logo" src={logo} alt="IYF Orlando" />
                     </div>
                     <div id="menu" className="text-left ">
                       <ul className="offcanvas_main_menu">
@@ -282,7 +282,7 @@ function Drawer({ drawer, action, lang }) {
                           id="academies"
                           className="menu-item-has-children active"
                         >
-                          <a href="/academies">Academies</a>
+                          <a href="/academy">Academies</a>
                         </li>
                         <li
                           onClick={(e) => handler(e, "pages")}

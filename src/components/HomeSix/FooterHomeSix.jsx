@@ -54,7 +54,7 @@ function FooterHomeSix() {
                     <Link to="/about-us">About Us</Link>
                   </li>
                   <li>
-                    <Link to="/academies">academies</Link>
+                    <Link to="/academy">academies</Link>
                   </li>
                   <li>
                     <a href="#">Case Studies</a>

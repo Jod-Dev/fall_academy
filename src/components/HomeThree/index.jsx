@@ -10,7 +10,7 @@ import FunFactHomeThree from "./FunFactHomeThree.jsx";
 import HeaderHomeThree from "./HeaderHomeThree.jsx";
 import HeroHomeThree from "./HeroHomeThree.jsx";
 import ProjectHomeThree from "./ProjectHomeThree.jsx";
-import academiesHomeThree from "./academiesHomeThree.jsx";
+import academiesHomeThree from "./academyHomeThree.jsx";
 import ShowCaseHomeThree from "./ShowCaseHomeThree.jsx";
 
 function HomeThree() {

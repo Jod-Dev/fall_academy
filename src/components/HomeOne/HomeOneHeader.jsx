@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import logo7 from "../../assets/images/iyf-full-logo.webp";
-import logo from "../../assets/images/iyf-full-logo.webp";
+import logo7 from "../../assets/images/logo.jpg";
+import logo from "../../assets/images/logo.jpg";
 import StickyMenu from "../../lib/StickyMenu.js";
 import Navigation from "../Navigation.jsx";
 
@@ -30,7 +30,7 @@ function HomeOneHeader({
                   </a>
                 ) : (
                   <a href="/">
-                    <img src={logo} alt="" />
+                    <img className="iyf-logo" src={logo} alt="IYF Orlando" />
                   </a>
                 )}
               </div>

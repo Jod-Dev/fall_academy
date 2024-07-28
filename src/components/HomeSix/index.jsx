@@ -6,7 +6,7 @@ import PricingHomeOne from "../HomeOne/PricingHomeOne.jsx";
 import BlogHomeThree from "../HomeThree/BlogHomeThree.jsx";
 import DownloadHomeThree from "../HomeThree/DownloadHomeThree.jsx";
 import CounterArea from "../HomeTwo/CounterArea.jsx";
-import academiesHomeTwo from "../HomeTwo/academiesHomeTwo.jsx";
+import academiesHomeTwo from "../HomeTwo/academyHomeTwo.jsx";
 import VideoPlayerHomeTwo from "../HomeTwo/VideoPlayerHomeTwo.jsx";
 import Drawer from "../Mobile/Drawer.jsx";
 import FooterHomeSix from "./FooterHomeSix.jsx";

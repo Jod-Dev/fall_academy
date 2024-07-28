@@ -1,87 +1,49 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import HomeOne from "./components/HomeOne/index.jsx";
 import Academies from "./components/Academies/index.jsx";
+import SingleNews from "./components/News/SingleNews.jsx";
 import AboutUs from "./components/AboutUs/index.jsx";
 import Contact from "./components/Contact/index.jsx";
 import Error from "./components/Error/index.jsx";
 import AboutUsTwo from "./components/AboutUs/AboutUsTwo.jsx";
-
 import Layout from "./components/Helper/Layout.jsx";
 import Registration from "./components/Registration/index.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    Component: Layout,
+    element: <Layout />,
     children: [
       {
         index: true,
         element: <HomeOne />,
-      } /*
-      {
-        path: "/home-two",
-        element: <HomeTwo />,
       },
       {
-        path: "/home-three",
-        element: <HomeThree />,
-      },
-      {
-        path: "/home-four",
-        element: <HomeFour />,
-      },
-      {
-        path: "/home-five",
-        element: <HomeFive />,
-      },
-      {
-        path: "/home-six",
-        element: <HomeSix />,
-      },
-      {
-        path: "/home-seven",
-        element: <HomeSeven />,
-      },
-      {
-        path: "/home-eight",
-        element: <HomeEight />,
-      },
-      {
-        path: "/home-dark",
-        element: <HomeDark />,
-      },
-      {
-        path: "/home-rtl",
-        element: <HomeRtl />,
-      },
-      {
-        path: "/news",
-        element: <News />,
-      },
-      {
-        path: "/news/single-news",
-        element: <SingleNews />,
-      },
-      */,
-      {
-        path: "/academies",
+        path: "academy",
         element: <Academies />,
       },
       {
-        path: "/mind-lecture",
+        path: "academy/:title",
+        element: <SingleNews />,
+      },
+      {
+        path: "mind-lecture",
         element: <AboutUs />,
       },
       {
-        path: "/contact",
+        path: "contact",
         element: <Contact />,
       },
-      { path: "/registration", element: <Registration /> },
       {
-        path: "/error",
+        path: "registration",
+        element: <Registration />,
+      },
+      {
+        path: "error",
         element: <Error />,
       },
       {
-        path: "/about-us",
+        path: "about-us",
         element: <AboutUsTwo />,
       },
       {
@@ -92,12 +54,8 @@ const router = createBrowserRouter([
   },
 ]);
 
-function Router() {
-  return (
-    <>
-      <RouterProvider router={router} />
-    </>
-  );
+function AppRouter() {
+  return <RouterProvider router={router} />;
 }
 
-export default Router;
+export default AppRouter;

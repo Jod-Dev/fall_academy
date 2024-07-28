@@ -2,7 +2,7 @@ import React from "react";
 import useToggle from "../../Hooks/useToggle.js";
 import BackToTop from "../BackToTop.jsx";
 import PricingHomeOne from "../HomeOne/PricingHomeOne.jsx";
-import academiesHomeOne from "../HomeOne/academiesHomeOne.jsx";
+import academiesHomeOne from "../HomeOne/academyHomeOne.jsx";
 import TestimonialHomeOne from "../HomeOne/TestimonialHomeOne.jsx";
 import FooterHomeThree from "../HomeThree/FooterHomeThree.jsx";
 import ProjectHomeThree from "../HomeThree/ProjectHomeThree.jsx";

@@ -8,7 +8,7 @@ import FaqHomeEight from "./FaqHomeEight.jsx";
 import FooterHomeEight from "./FooterHomeEight.jsx";
 import HeaderHomeEight from "./HeaderHomeEight.jsx";
 import HeroHomeEight from "./HeroHomeEight.jsx";
-import AcademiesHomeEight from "./AcademiesHomeEight.jsx";
+import AcademiesHomeEight from "./academyHomeEight.jsx";
 import SignupHomeEight from "./SignupHomeEight.jsx";
 import TeamHomeEight from "./TeamHomeEight.jsx";
 import TestimonialHomeEight from "./TestimonialHomeEight.jsx";

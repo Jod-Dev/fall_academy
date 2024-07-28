@@ -12,7 +12,8 @@
       "tag": "Language",
       "catchPhrase": "Discover the beauty of Korean culture through language!",
       "improvement": "Fluency in speaking, reading, and writing Korean.",
-      "equipment": "Notebook, pen, and Korean-English dictionary."
+      "equipment": "Notebook, pen, and Korean-English dictionary.",
+      "academyDetailsImg": "https://placehold.co/750x450"
     },
     {
       "id": 2,
@@ -26,7 +27,8 @@
       "tag": "Language",
       "catchPhrase": "Master English and open up a world of opportunities!",
       "improvement": "Enhanced speaking, listening, and writing skills.",
-      "equipment": "Notebook, pen, and English grammar book."
+      "equipment": "Notebook, pen, and English grammar book.",
+      "academyDetailsImg": "https://placehold.co/750x450"
     },
     {
       "id": 3,
@@ -40,7 +42,8 @@
       "tag": "Music and Art",
       "catchPhrase": "Play your heart out with our piano classes!",
       "improvement": "Piano playing skills, music theory knowledge.",
-      "equipment": "Piano or keyboard, sheet music."
+      "equipment": "Piano or keyboard, sheet music.",
+      "academyDetailsImg": "https://placehold.co/750x450"
     },
     {
       "id": 4,
@@ -54,7 +57,8 @@
       "tag": "Music and Art",
       "catchPhrase": "Unleash your inner artist!",
       "improvement": "Drawing, painting, and sculpting skills.",
-      "equipment": "Sketchbook, pencils, paints, and brushes."
+      "equipment": "Sketchbook, pencils, paints, and brushes.",
+      "academyDetailsImg": "https://placehold.co/750x450"
     },
     {
       "id": 5,
@@ -68,7 +72,8 @@
       "tag": "Music and Art",
       "catchPhrase": "Craft your world with our DIY classes!",
       "improvement": "Handicraft skills, creativity, and project planning.",
-      "equipment": "Craft supplies as needed per project."
+      "equipment": "Craft supplies as needed per project.",
+      "academyDetailsImg": "https://placehold.co/750x450"
     },
     {
       "id": 6,
@@ -82,7 +87,8 @@
       "tag": "Music and Art",
       "catchPhrase": "Learning through play for young minds!",
       "improvement": "Cognitive and motor skills through fun activities.",
-      "equipment": "Various toys and educational materials."
+      "equipment": "Various toys and educational materials.",
+      "academyDetailsImg": "https://placehold.co/750x450"
     },
     {
       "id": 7,
@@ -96,7 +102,8 @@
       "tag": "Sports",
       "catchPhrase": "Get active with pickleball!",
       "improvement": "Physical fitness, hand-eye coordination.",
-      "equipment": "Pickleball paddle and ball."
+      "equipment": "Pickleball paddle and ball.",
+      "academyDetailsImg": "https://placehold.co/750x450"
     },
     {
       "id": 8,
@@ -110,7 +117,8 @@
       "tag": "Sports",
       "catchPhrase": "Shoot for the stars with basketball!",
       "improvement": "Dribbling, shooting, and team play skills.",
-      "equipment": "Basketball and athletic wear."
+      "equipment": "Basketball and athletic wear.",
+      "academyDetailsImg": "https://placehold.co/750x450"
     },
     {
       "id": 9,
@@ -124,12 +132,13 @@
       "tag": "Sports",
       "catchPhrase": "Kick your way to success with soccer!",
       "improvement": "Ball control, passing, and teamwork.",
-      "equipment": "Soccer ball and cleats."
+      "equipment": "Soccer ball and cleats.",
+      "academyDetailsImg": "https://placehold.co/750x450"
     },
     {
       "id": 10,
       "title": "Stretch and Strengthen",
-      "description": "Relax and improve flexibility through yoga",
+      "description": "Dynamic, diverse, full-body workouts suitable for all fitness levels that simultaneously combine stretching and strengthening while engaging all 650 muscles. These classes will increase flexibility and mobility for a healthy, toned and pain-free body.",
       "price": "$40.00",
       "level": "Level (N/A)",
       "age": "6th to adult (Only Female)",
@@ -138,7 +147,8 @@
       "tag": "Sports",
       "catchPhrase": "Stretch your limits with yoga!",
       "improvement": "Flexibility, strength, and relaxation.",
-      "equipment": "Yoga mat and comfortable clothing."
+      "equipment": "Yoga mat and comfortable clothing.",
+      "academyDetailsImg": "https://placehold.co/750x450"
     },
     {
       "id": 11,
@@ -152,7 +162,8 @@
       "tag": "Music and Art",
       "catchPhrase": "Cook up a storm with our culinary classes!",
       "improvement": "Cooking skills, recipe knowledge, and kitchen confidence.",
-      "equipment": "Apron, chef's knife, and basic cooking utensils."
+      "equipment": "Apron, chef's knife, and basic cooking utensils.",
+      "academyDetailsImg": "https://placehold.co/750x450"
     }
   ]
 }

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import logo from "../../assets/images/iyf-full-logo.webp";
+import logo from "../../assets/images/logo.jpg";
 import StickyMenu from "../../lib/StickyMenu.js";
 import Navigation from "../Navigation.jsx";
 
@@ -15,7 +15,7 @@ function HeaderHomeRtl({ action, className, lang, changeModeLan }) {
             <div className="col-lg-2 col-md-4 col-sm-5 col-6 order-1 order-sm-1">
               <div className="iyf-logo-box">
                 <a href="/">
-                  <img src={logo} alt="" />
+                  <img className="iyf-logo" src={logo} alt="IYF Orlando" />
                 </a>
               </div>
             </div>

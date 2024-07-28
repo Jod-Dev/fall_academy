@@ -29,7 +29,7 @@ function BlogHomeThree() {
                 </div>
                 <div className="content">
                   <h5 className="title">
-                    <a href="/academies">IYF Orlando - 2024 Fall Academy</a>
+                    <a href="/academy">IYF Orlando - 2024 Fall Academy</a>
                   </h5>
                   <div className="meta-item">
                     <ul>

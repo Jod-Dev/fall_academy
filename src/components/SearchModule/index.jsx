@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/images/iyf_logo_white.webp";
+import logo from "../../assets/images/logo.jpg";
 
 function SearchModule({ value, searchToggle }) {
   return (
@@ -10,7 +10,7 @@ function SearchModule({ value, searchToggle }) {
             <div className="row">
               <div className="col-6">
                 <h5 className="search-title">
-                  <img src={logo} alt="" />
+                  <img className="iyf-logo" src={logo} alt="IYF Orlando" />
                 </h5>
               </div>
               <div className="col-6">

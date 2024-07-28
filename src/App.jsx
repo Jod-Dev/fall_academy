@@ -1,16 +1,17 @@
-import Router from "./Router.jsx";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
+import Router from "./Router";
 import Loader from "./components/Helper/Loader.jsx";
-import Layout from "./components/Helper/Layout.jsx";
 
 function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => {
+    const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000);
-  });
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <>
@@ -19,7 +20,7 @@ function App() {
           <Loader />
         </div>
       )}
-      <div className={`iyf-visible ${loading === false ? "active" : ""}`}>
+      <div className={`iyf-visible ${!loading ? "active" : ""}`}>
         <Router />
       </div>
     </>

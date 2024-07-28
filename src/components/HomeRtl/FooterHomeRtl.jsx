@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/images/iyf-full-logo.webp";
+import logo from "../../assets/images/logo.jpg";
 
 function FooterHomeRtl({ className }) {
   return (
@@ -11,7 +11,7 @@ function FooterHomeRtl({ className }) {
               <div className="footer-about-widget text-right">
                 <div className="logo">
                   <a href="#">
-                    <img src={logo} alt="" />
+                    <img className="iyf-logo" src={logo} alt="IYF Orlando" />
                   </a>
                 </div>
                 <p>

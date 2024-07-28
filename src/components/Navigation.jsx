@@ -44,7 +44,7 @@ function Navigation({ lang = false }) {
             </ul>
           </li>
           <li>
-            <Link to="/academies">خدمة</Link>
+            <Link to="/academy">خدمة</Link>
           </li>
           <li>
             <a href="#">
@@ -88,7 +88,7 @@ function Navigation({ lang = false }) {
             <Link to="/mind-lecture">Mind Lecture</Link>
           </li>
           <li>
-            <Link to="/academies">Academy</Link>
+            <Link to="/academy">Academy</Link>
           </li>
           <li>
             <Link to="/registration">Registration</Link>

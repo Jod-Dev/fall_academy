@@ -30,7 +30,7 @@ function VideoPlayerHomeTwo({ className }) {
       {showVideo && (
         <PopupVideo
           handler={(e) => handleVideoShow(e)}
-          videoSrc="https://www.youtube.com/watch?v=kqIugMCop4k"
+          videoSrc="https://www.youtube.com/embed/neLDJ7Cr3c0?si=fUOzHySwgAToWMXU"
         />
       )}
       <section className={`iyf-video-player-area pb-100 ${className || ""}`}>
@@ -52,17 +52,15 @@ function VideoPlayerHomeTwo({ className }) {
                   </div>
                 </div>
                 <div className="content">
-                  <h3 className="title">
-                    Watch the two-minute video to learn how.
-                  </h3>
-                  <p>
+                  <h3 className="title">IYF Intro</h3>
+                  {/* <p>
                     The wireless cheesed on your bike mate zonked a load of old
                     tosh hunky dory it's all gone to pot haggle william car boot
                     pear shaped geeza.
-                  </p>
-                  <a className="main-btn" href="#">
+                  </p> */}
+                  {/* <a className="main-btn" href="#">
                     Get Started
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>

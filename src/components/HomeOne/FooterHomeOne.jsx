@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../../assets/images/iyf-full-logo.webp";
+import logo from "../../assets/images/logo.jpg";
 
 function FooterHomeOne({ className }) {
+  const currentYear = new Date().getFullYear();
+
   return (
     <>
       <section className={`iyf-footer-area ${className || ""}`}>
@@ -12,16 +14,17 @@ function FooterHomeOne({ className }) {
               <div className="footer-about-widget">
                 <div className="logo">
                   <a href="#">
-                    <img src={logo} alt="" />
+                    <img className="iyf-logo" src={logo} alt="IYF Orlando" />
                   </a>
                 </div>
                 <p>
                   We nurture the leaders of tomorrow through educational,
                   cultural, and volunteer programs
                 </p>
-                <a to="/about-us">
+                <Link to="/about-us">
                   Read More <i className="fal fa-arrow-right" />
-                </a>
+                </Link>
+
                 <div className="social mt-30">
                   <ul>
                     <li>
@@ -54,14 +57,18 @@ function FooterHomeOne({ className }) {
                     <Link to="/about-us">About Us</Link>
                   </li>
                   <li>
-                    <Link to="/academies">Academies</Link>
+                    <a to="/mind-lecture">Mind Lecture</a>
                   </li>
                   <li>
-                    <a href="#">News</a>
+                    <Link to="/academy">Academy</Link>
                   </li>
                   <li>
-                    <Link to="/news">Event</Link>
+                    <Link to="/registration">Registration</Link>
                   </li>
+                  <li>
+                    <Link to="/event">Event</Link>
+                  </li>
+
                   <li>
                     <Link to="/contact">Contact</Link>
                   </li>
@@ -117,25 +124,10 @@ function FooterHomeOne({ className }) {
           <div className="row">
             <div className="col-lg-12">
               <div className="footer-copyright d-flex align-items-center justify-content-between pt-35">
-                {/* 
-                <div className="apps-download-btn">
-                  <ul>
-                    <li>
-                      <a href="#">
-                        <i className="fab fa-apple" /> Download for iOS
-                      </a>
-                    </li>
-                    <li>
-                      <a className="item-2" href="#">
-                        <i className="fab fa-google-play" /> Download for
-                        Android
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                 */}
                 <div className="copyright-text">
-                  <p>Copyright © 2024 IYF Orlando. All rights reserved.</p>
+                  <p>
+                    Copyright © {currentYear} IYF Orlando. All rights reserved.
+                  </p>
                 </div>
               </div>
             </div>

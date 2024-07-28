@@ -9,7 +9,7 @@ import HeroHomeOne from "../HomeOne/HeroHomeOne.jsx";
 import HomeOneHeader from "../HomeOne/HomeOneHeader.jsx";
 import PricingHomeOne from "../HomeOne/PricingHomeOne.jsx";
 import ProjectHomeOne from "../HomeOne/ProjectHomeOne.jsx";
-import AcademiesHomeOne from "../HomeOne/AcademiesHomeOne.jsx";
+import AcademiesHomeOne from "../HomeOne/academyHomeOne.jsx";
 import TeamHomeOne from "../HomeOne/TeamHomeOne.jsx";
 import TestimonialHomeOne from "../HomeOne/TestimonialHomeOne.jsx";
 import TrafficHomeOne from "../HomeOne/TrafficHomeOne.jsx";

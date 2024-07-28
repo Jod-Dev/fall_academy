@@ -12,7 +12,7 @@ function FooterHomeFive() {
               <div className="footer-about-widget footer-about-widget-5">
                 <div className="logo">
                   <a href="#">
-                    <img src={logo} alt="" />
+                    <img className="iyf-logo" src={logo} alt="IYF Orlando" />
                   </a>
                 </div>
                 <p>
@@ -55,7 +55,7 @@ function FooterHomeFive() {
                     <Link to="/about-us">About Us</Link>
                   </li>
                   <li>
-                    <Link to="/academies">academies</Link>
+                    <Link to="/academy">academies</Link>
                   </li>
                   <li>
                     <a href="#">Case Studies</a>

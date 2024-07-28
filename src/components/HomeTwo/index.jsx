@@ -10,7 +10,7 @@ import FooterHomeTwo from "./FooterHomeTwo.jsx";
 import HeaderHomeTwo from "./HeaderHomeTwo.jsx";
 import HeroHomeTwo from "./HeroHomeTwo.jsx";
 import PricingHomeTwo from "./PricingHomeTwo.jsx";
-import academiesHomeTwo from "./academiesHomeTwo.jsx";
+import AcademiesHomeTwo from "./AcademiesHomeTwo.jsx";
 import SponserHomeTwo from "./SponserHomeTwo.jsx";
 import TestimonialHomeTwo from "./TestimonialHomeTwo.jsx";
 import VideoPlayerHomeTwo from "./VideoPlayerHomeTwo.jsx";
@@ -22,7 +22,7 @@ function HomeTwo() {
       <Drawer drawer={drawer} action={drawerAction.toggle} />
       <HeaderHomeTwo action={drawerAction.toggle} />
       <HeroHomeTwo />
-      <academiesHomeTwo />
+      <AcademiesHomeTwo />
       <AboutHomeTwo />
       <FeaturesHomeTwo />
       <CounterArea />
