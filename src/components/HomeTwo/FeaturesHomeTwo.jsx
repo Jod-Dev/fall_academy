@@ -1,5 +1,5 @@
 import React from "react";
-import featureThumb from "../../assets/images/features-thumb-2.png";
+import featureThumb from "../../assets/images/mind_lecture.jpg";
 import shape13 from "../../assets/images/shape/shape-13.png";
 import shape14 from "../../assets/images/shape/shape-14.png";
 import shape15 from "../../assets/images/shape/shape-15.png";

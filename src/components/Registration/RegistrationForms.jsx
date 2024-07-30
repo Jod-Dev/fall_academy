@@ -8,6 +8,7 @@ import {
   FormFeedback,
   Row,
   Col,
+  Progress,
 } from "reactstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { db } from "./firebaseConfig";
@@ -69,6 +70,46 @@ const STATES = [
   "Wyoming",
 ];
 
+const ACADEMY_LEVELS = {
+  "N/A": "N/A",
+  Korean: "Alphabet",
+  English: "Basic",
+  Piano: "P2",
+  Art: "N/A",
+  "DIY (Do It Yourself)": "N/A",
+  Kids: "N/A",
+  Pickleball: "N/A",
+  Basketball: "N/A",
+  Soccer: "N/A",
+};
+
+const ACADEMY_NOTES = {
+  Korean: "Note: This level is only for beginners.",
+  English: "Note: This level is only for beginners.",
+  Piano: "Note: This level is only for Intermediate (Not beginner).",
+};
+
+const SECOND_PERIOD_LEVELS = {
+  "N/A": "N/A",
+  Korean: ["Beginner", "Intermediate"],
+  English: "Intermediate",
+  Piano: "P1",
+  Art: "N/A",
+  "DIY (Do It Yourself)": "N/A",
+  Kids: "N/A",
+  "Stretch and Strengthen": "N/A",
+};
+
+const SECOND_PERIOD_NOTES = {
+  Korean: {
+    Beginner: "Note: This level is only for beginners.",
+    Intermediate: "Note: This level is only for Intermediate (Not beginner).",
+  },
+  English: "Note: This level is only for Intermediate (Not beginner).",
+  Piano: "Note: This level is only for beginners.",
+  "Stretch and Strengthen": "Note: Only for women.",
+};
+
 function RegistrationForms() {
   const initialFormData = {
     firstName: "",
@@ -85,16 +126,10 @@ function RegistrationForms() {
     address: "",
     termsAccepted: false,
     firstPeriod: {
-      schedule: "10:00 am to 10:50 am",
       academy: "",
       level: "",
     },
     secondPeriod: {
-      schedule: "11:40 am to 12:30 pm",
-      academy: "",
-      level: "",
-    },
-    thirdPeriod: {
       academy: "",
       level: "",
     },
@@ -135,12 +170,7 @@ function RegistrationForms() {
         setErrors((prevErrors) => ({ ...prevErrors, [id]: "" }));
       }
     } else {
-      const period =
-        step === 2
-          ? "firstPeriod"
-          : step === 3
-          ? "secondPeriod"
-          : "thirdPeriod";
+      const period = step === 2 ? "firstPeriod" : "secondPeriod";
       setFormData((prevData) => ({
         ...prevData,
         [period]: {
@@ -154,6 +184,34 @@ function RegistrationForms() {
           [period]: { ...prevErrors[period], [id]: "" },
         }));
       }
+    }
+  };
+
+  const handleAcademyChange = (e) => {
+    const { value } = e.target;
+    const period = step === 2 ? "firstPeriod" : "secondPeriod";
+    const levels =
+      period === "firstPeriod" ? ACADEMY_LEVELS : SECOND_PERIOD_LEVELS;
+    const notes =
+      period === "firstPeriod" ? ACADEMY_NOTES : SECOND_PERIOD_NOTES;
+
+    setFormData((prevData) => ({
+      ...prevData,
+      [period]: {
+        ...prevData[period],
+        academy: value,
+        level: Array.isArray(levels[value]) ? levels[value][0] : levels[value],
+      },
+    }));
+
+    if (Array.isArray(levels[value])) {
+      setErrors((prevErrors) => ({
+        ...prevErrors,
+        [period]: {
+          ...prevErrors[period],
+          level: "",
+        },
+      }));
     }
   };
 
@@ -182,13 +240,46 @@ function RegistrationForms() {
         }
       });
 
+      // Birthday validation
+      const birthDate = new Date(formData.birthday);
+      const today = new Date();
+      if (birthDate > today) {
+        newErrors.birthday = "Birthday cannot be a future date.";
+      } else if (isNaN(birthDate.getTime())) {
+        newErrors.birthday = "Invalid birthday.";
+      }
+
+      // Phone number validation
+      const phoneRegex = /^\(\d{3}\) \d{3}-\d{4}$/;
+      if (!phoneRegex.test(formData.cellNumber)) {
+        newErrors.cellNumber =
+          "Phone number must be in the format (999) 999-9999.";
+      }
+
+      // Email validation
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(formData.email)) {
+        newErrors.email = "Invalid email format.";
+      } else {
+        const emailDomain = formData.email.split("@")[1];
+        if (!emailDomain.includes(".")) {
+          newErrors.email = "Invalid email domain.";
+        }
+      }
+
       if (formData.email !== formData.confirmEmail) {
         newErrors.confirmEmail = "Email addresses do not match.";
       }
 
+      // Zip code validation
       const zipCodeRegex = /^\d{5}$/;
       if (!zipCodeRegex.test(formData.zipCode)) {
-        newErrors.zipCode = "Zip Code must be 5 digits.";
+        newErrors.zipCode = "Zip code must be 5 digits.";
+      }
+
+      // State validation
+      if (!formData.state) {
+        newErrors.state = "State is required.";
       }
     } else if (step === 2 || step === 3) {
       const period = step === 2 ? "firstPeriod" : "secondPeriod";
@@ -282,10 +373,9 @@ function RegistrationForms() {
           <div className="row">
             <div className="col-md-4">
               <div className="contact--info-area">
-                <h3>Join Us Today!</h3>
+                <h3>Get in touch</h3>
                 <p>
-                  Ready to embark on your learning journey? Complete the form
-                  below to begin your adventure with us.
+                  Looking for help? Fill the form and start a new adventure.
                 </p>
                 <div className="single-info">
                   <h5>Address</h5>
@@ -333,9 +423,11 @@ function RegistrationForms() {
 
             <div className="col-md-8">
               <div className="contact-form">
+                <Progress value={(step / 4) * 100} className="mb-4" />
                 <Form onSubmit={handleSubmit}>
                   {step === 1 && (
                     <>
+                      <h3>Step 1: Personal Information</h3>
                       <Row>
                         <Col md={6}>
                           <FormGroup>
@@ -419,7 +511,7 @@ function RegistrationForms() {
                         </Col>
                         <Col md={6}>
                           <FormGroup>
-                            <Label for="cellNumber">Cell Number</Label>
+                            <Label for="cellNumber">Phone Number</Label>
                             <Input
                               type="text"
                               id="cellNumber"
@@ -526,13 +618,14 @@ function RegistrationForms() {
                           <FormGroup>
                             <Label for="zipCode">Zip Code</Label>
                             <Input
-                              type="number"
+                              type="text"
                               id="zipCode"
                               value={formData.zipCode}
                               onChange={handleChange}
                               invalid={!!errors.zipCode}
                               maxLength={5}
                               placeholder="Zip Code"
+                              style={inputStyle}
                             />
                             <FormFeedback>{errors.zipCode}</FormFeedback>
                           </FormGroup>
@@ -548,7 +641,7 @@ function RegistrationForms() {
                           />
                           I have read and agree to the{" "}
                           <a href="/terms-and-conditions" target="_blank">
-                            Terms & Conditions
+                            Terms and Conditions
                           </a>
                         </Label>
                         {errors.termsAccepted && (
@@ -560,30 +653,42 @@ function RegistrationForms() {
 
                   {step === 2 && (
                     <>
-                      <h3>1st Period</h3>
+                      <h3>Step 2: First Period (10:00 am - 11:30 am)</h3>
                       <Row>
                         <Col md={6}>
                           <FormGroup>
                             <Label for="academy">Academy</Label>
-                            <Input
-                              type="select"
-                              id="academy"
-                              name="firstPeriodAcademy"
-                              value={formData.firstPeriod.academy}
-                              onChange={handleChange}
-                              invalid={!!errors.firstPeriod?.academy}
-                              style={inputStyle}
-                            >
-                              <option value="N/A">N/A</option>
-                              <option value="Korean">Korean</option>
-                              <option value="English">English</option>
-                              <option value="Piano">Piano</option>
-                              <option value="Art">Art</option>
-                              <option value="Kids">Kids</option>
-                              <option value="Pickleball">Pickleball</option>
-                              <option value="Basketball">Basketball</option>
-                              <option value="Soccer">Soccer</option>
-                            </Input>
+                            <div>
+                              {[
+                                "N/A",
+                                "Korean",
+                                "English",
+                                "Piano",
+                                "Art",
+                                "DIY (Do It Yourself)",
+                                "Kids",
+                                "Pickleball",
+                                "Basketball",
+                                "Soccer",
+                              ].map((option) => (
+                                <FormGroup check key={option}>
+                                  <Label check>
+                                    <Input
+                                      type="radio"
+                                      name="firstPeriodAcademy"
+                                      id="academy"
+                                      value={option}
+                                      checked={
+                                        formData.firstPeriod.academy === option
+                                      }
+                                      onChange={handleAcademyChange}
+                                      invalid={!!errors.firstPeriod?.academy}
+                                    />
+                                    {option}
+                                  </Label>
+                                </FormGroup>
+                              ))}
+                            </div>
                             <FormFeedback>
                               {errors.firstPeriod?.academy}
                             </FormFeedback>
@@ -593,63 +698,61 @@ function RegistrationForms() {
                           <FormGroup>
                             <Label for="level">Level</Label>
                             <Input
-                              type="select"
+                              type="text"
                               id="level"
-                              name="firstPeriodLevel"
                               value={formData.firstPeriod.level}
-                              onChange={handleChange}
-                              invalid={!!errors.firstPeriod?.level}
+                              readOnly
+                              placeholder="Level"
                               style={inputStyle}
-                            >
-                              <option value="N/A">N/A</option>
-                              <option value="Level 2">Level 2</option>
-                            </Input>
+                            />
                             <FormFeedback>
                               {errors.firstPeriod?.level}
                             </FormFeedback>
                           </FormGroup>
                         </Col>
-                        <Col md={6}>
-                          <FormGroup>
-                            <Label for="schedule">Schedule</Label>
-                            <Input
-                              type="text"
-                              id="schedule"
-                              name="firstPeriodSchedule"
-                              value="10:00 am - 10:50 am"
-                              disabled
-                              style={inputStyle}
-                            />
-                          </FormGroup>
-                        </Col>
                       </Row>
+                      {ACADEMY_NOTES[formData.firstPeriod.academy] && (
+                        <p>{ACADEMY_NOTES[formData.firstPeriod.academy]}</p>
+                      )}
                     </>
                   )}
 
                   {step === 3 && (
                     <>
-                      <h3>2nd Period</h3>
+                      <h3>Step 3: Second Period (11:00 am - 12:30 pm)</h3>
                       <Row>
                         <Col md={6}>
                           <FormGroup>
                             <Label for="academy">Academy</Label>
-                            <Input
-                              type="select"
-                              id="academy"
-                              name="secondPeriodAcademy"
-                              value={formData.secondPeriod.academy}
-                              onChange={handleChange}
-                              invalid={!!errors.secondPeriod?.academy}
-                              style={inputStyle}
-                            >
-                              <option value="N/A">N/A</option>
-                              <option value="Korean">Korean</option>
-                              <option value="English">English</option>
-                              <option value="Piano">Piano</option>
-                              <option value="Art">Art</option>
-                              <option value="Kids">Kids</option>
-                              <option value="Yoga">Yoga</option>
-                            </Input>
+                            <div>
+                              {[
+                                "N/A",
+                                "Korean",
+                                "English",
+                                "Piano",
+                                "Art",
+                                "DIY (Do It Yourself)",
+                                "Kids",
+                                "Stretch and Strengthen",
+                              ].map((option) => (
+                                <FormGroup check key={option}>
+                                  <Label check>
+                                    <Input
+                                      type="radio"
+                                      name="secondPeriodAcademy"
+                                      id="academy"
+                                      value={option}
+                                      checked={
+                                        formData.secondPeriod.academy === option
+                                      }
+                                      onChange={handleAcademyChange}
+                                      invalid={!!errors.secondPeriod?.academy}
+                                    />
+                                    {option}
+                                  </Label>
+                                </FormGroup>
+                              ))}
+                            </div>
                             <FormFeedback>
                               {errors.secondPeriod?.academy}
                             </FormFeedback>
@@ -658,100 +761,158 @@ function RegistrationForms() {
                         <Col md={6}>
                           <FormGroup>
                             <Label for="level">Level</Label>
-                            <Input
-                              type="select"
-                              id="level"
-                              name="secondPeriodLevel"
-                              value={formData.secondPeriod.level}
-                              onChange={handleChange}
-                              invalid={!!errors.secondPeriod?.level}
-                              style={inputStyle}
-                            >
-                              <option value="N/A">N/A</option>
-                              <option value="Level 1">Level 1</option>
-                              <option value="Level 3">Level 3</option>
-                            </Input>
+                            {Array.isArray(
+                              SECOND_PERIOD_LEVELS[
+                                formData.secondPeriod.academy
+                              ]
+                            ) ? (
+                              <div>
+                                {SECOND_PERIOD_LEVELS[
+                                  formData.secondPeriod.academy
+                                ].map((level) => (
+                                  <FormGroup check key={level}>
+                                    <Label check>
+                                      <Input
+                                        type="radio"
+                                        name="secondPeriodLevel"
+                                        id="level"
+                                        value={level}
+                                        checked={
+                                          formData.secondPeriod.level === level
+                                        }
+                                        onChange={handleChange}
+                                        invalid={!!errors.secondPeriod?.level}
+                                      />
+                                      {level}
+                                    </Label>
+                                  </FormGroup>
+                                ))}
+                              </div>
+                            ) : (
+                              <Input
+                                type="text"
+                                id="level"
+                                value={formData.secondPeriod.level}
+                                readOnly
+                                placeholder="Level"
+                                style={inputStyle}
+                              />
+                            )}
                             <FormFeedback>
                               {errors.secondPeriod?.level}
                             </FormFeedback>
                           </FormGroup>
                         </Col>
-                        <Col md={6}>
-                          <FormGroup>
-                            <Label for="schedule">Schedule</Label>
-                            <Input
-                              type="text"
-                              id="schedule"
-                              name="secondPeriodSchedule"
-                              value="11:40 am - 12:30 pm"
-                              disabled
-                              style={inputStyle}
-                            />
-                          </FormGroup>
-                        </Col>
                       </Row>
+                      {SECOND_PERIOD_NOTES[formData.secondPeriod.academy] && (
+                        <p
+                          style={{
+                            color:
+                              formData.secondPeriod.academy ===
+                              "Stretch and Strengthen"
+                                ? "red"
+                                : "black",
+                          }}
+                        >
+                          {typeof SECOND_PERIOD_NOTES[
+                            formData.secondPeriod.academy
+                          ] === "string"
+                            ? SECOND_PERIOD_NOTES[formData.secondPeriod.academy]
+                            : SECOND_PERIOD_NOTES[
+                                formData.secondPeriod.academy
+                              ][formData.secondPeriod.level]}
+                        </p>
+                      )}
                     </>
                   )}
 
                   {step === 4 && (
                     <>
-                      <h3>3rd Period</h3>
+                      <h3>Step 4: Review and Confirm</h3>
                       <Row>
-                        <Col md={6}>
-                          <FormGroup>
-                            <Label for="academy">Academy</Label>
-                            <Input
-                              type="select"
-                              id="academy"
-                              name="thirdPeriodAcademy"
-                              value={formData.thirdPeriod.academy}
-                              onChange={handleChange}
-                              style={inputStyle}
-                            >
-                              <option value="N/A">N/A</option>
-                              <option value="Cooking">Cooking</option>
-                            </Input>
-                          </FormGroup>
+                        <Col md={12}>
+                          <h5>Personal Information</h5>
+                          <p>
+                            <strong>First Name:</strong> {formData.firstName}
+                          </p>
+                          <p>
+                            <strong>Last Name:</strong> {formData.lastName}
+                          </p>
+                          <p>
+                            <strong>Birthday:</strong> {formData.birthday}
+                          </p>
+                          <p>
+                            <strong>Age:</strong> {formData.age}
+                          </p>
+                          <p>
+                            <strong>Gender:</strong> {formData.gender}
+                          </p>
+                          <p>
+                            <strong>Phone Number:</strong> {formData.cellNumber}
+                          </p>
+                          <p>
+                            <strong>Email:</strong> {formData.email}
+                          </p>
+                          <p>
+                            <strong>Address:</strong> {formData.address}
+                          </p>
+                          <p>
+                            <strong>City:</strong> {formData.city}
+                          </p>
+                          <p>
+                            <strong>State:</strong> {formData.state}
+                          </p>
+                          <p>
+                            <strong>Zip Code:</strong> {formData.zipCode}
+                          </p>
                         </Col>
-                        <Col md={6}>
-                          <FormGroup>
-                            <Label for="level">Level</Label>
-                            <Input
-                              type="select"
-                              id="level"
-                              name="thirdPeriodLevel"
-                              value={formData.thirdPeriod.level}
-                              onChange={handleChange}
-                              style={inputStyle}
-                            >
-                              <option value="N/A">N/A</option>
-                            </Input>
-                          </FormGroup>
+                      </Row>
+                      <Row>
+                        <Col md={12}>
+                          <h5>First Period (10:00 am - 11:30 am)</h5>
+                          <p>
+                            <strong>Academy:</strong>{" "}
+                            {formData.firstPeriod.academy}
+                          </p>
+                          <p>
+                            <strong>Level:</strong> {formData.firstPeriod.level}
+                          </p>
                         </Col>
-                        <Col md={6}>
-                          <FormGroup>
-                            <Label for="schedule">Schedule</Label>
-                            <Input
-                              type="text"
-                              id="schedule"
-                              name="thirdPeriodSchedule"
-                              value="1:30 pm - 2:30 pm"
-                              disabled
-                              style={inputStyle}
-                            />
-                          </FormGroup>
+                      </Row>
+                      <Row>
+                        <Col md={12}>
+                          <h5>Second Period (11:00 am - 12:30 pm)</h5>
+                          <p>
+                            <strong>Academy:</strong>{" "}
+                            {formData.secondPeriod.academy}
+                          </p>
+                          <p>
+                            <strong>Level:</strong>{" "}
+                            {formData.secondPeriod.level}
+                          </p>
                         </Col>
                       </Row>
                     </>
                   )}
 
-                  <Button
-                    type="submit"
-                    color="primary"
-                    disabled={step === 1 && !formData.termsAccepted}
-                  >
-                    {step === 4 ? "Submit" : "Next"}
-                  </Button>
+                  <div className="d-flex justify-content-between">
+                    {step > 1 && (
+                      <Button
+                        type="button"
+                        color="secondary"
+                        onClick={() => setStep(step - 1)}
+                      >
+                        Previous
+                      </Button>
+                    )}
+                    <Button
+                      type="submit"
+                      color="primary"
+                      disabled={step === 1 && !formData.termsAccepted}
+                    >
+                      {step === 4 ? "Submit" : "Next"}
+                    </Button>
+                  </div>
                 </Form>
               </div>
             </div>
